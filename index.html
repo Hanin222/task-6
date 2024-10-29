@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light border">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/image/logo.png" alt="Avatar Logo" style="width:95px;">
+            </a>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link custom-color active" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FEATURED</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">POPULAR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- *************************************************
+   *****************************************************************
+    ************************************************************************-->
+
+    <div id="demo" class="carousel slide bg-light" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100 p-4">
+
+                    <div class="col-12 col-lg-6 text-center mb-3 mb-lg-0">
+                        <h3 class="display-4 hero-title">Life Of The Wild</h3>
+                        <p class="custom-text-color hero-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Ut nihil velit et sit quis voluptas aliquid reprehenderit quam
+                            repudiandae, non eius ducimus!
+                        </p>
+                        <a href="#" class="btn custom-color custom-border mt-3">READ MORE
+                            <i class="fas fa-arrow-right custom-color"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <img src="./assets/image/main-banner1.jpg" alt="Los Angeles" class=" rounded">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100 p-4">
+
+                    <div class="col-12 col-lg-6 text-center mb-3 mb-lg-0">
+                        <h3 class="display-4 hero-title">Birds Gonna Be Happy</h3>
+                        <p class="custom-text-color hero-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Necessitatibus rem culpa sequi accusamus aliquid.
+                        </p>
+                        <a href="#" class="btn custom-color custom-border mt-3">READ MORE
+                            <i class="fas fa-arrow-right custom-color"></i>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <img src="./assets/image/main-banner2.jpg" alt="Chicago" class=" rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <i class="fas fa-arrow-left text-dark circlr-hno"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <i class="fas fa-arrow-right text-dark circlr-hno"></i>
+        </button>
+    </div>
+
+
+
+    <!-- ********************************************************************************
+ ************************************************************************************ -->
+    <div class="img-wrapper d-flex justify-content-center">
+        <div class="row mt-5 mb-5">
+            <div class="col-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+                <img src="./assets/image/client-image1.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+                <img src="./assets/image/client-image2.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+                <img src="./assets/image/client-image3.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+                <img src="./assets/image/client-image4.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 mb-3 d-flex justify-content-center">
+                <img src="./assets/image/client-image5.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ********************** Featured Books Section*****************************
+ ********************************************************************************** -->
+
+    <section id="featured-books" class="container">
+        <p class="text-center line-title ">SOME QUALITY ITEMS</p>
+        <h2 class="text-center">Featured Books</h2>
+        <div class="row" id="featured-books-list"></div>
+    </section>
+
+    <!-- ******************Best Selling Book Section ***************************
+     ********************************************************************************-->
+    <section class="img-wrapper">
+        <div id="best-selling-book" class="container">
+            <div id="best-selling-book-info" class="d-flex align-items-center best-selling-book-card"></div>
+        </div>
+    </section>
+
+
+    <!-- **************Popular Books Section****************************
+     ********************************************************************* -->
+
+    <section id="popular-books" class="container my-5">
+        <p class="text-center line-title">SOME QUALITY ITEMS</p>
+        <h2 class="text-center mb-4">Popular Books</h2>
+        <ul class="popular-lnk d-flex justify-content-around mb-4">
+            <li class="popular-category active">All Genres</li>
+            <li class="popular-category">Business</li>
+            <li class="popular-category">Technology</li>
+            <li class="popular-category">Romantic</li>
+            <li class="popular-category">Adventure</li>
+            <li class="popular-category">Fictional</li>
+        </ul>
+        <div class="row" id="popular-books-list"></div>
+    </section>
+
+
+    <!-- ***********************************************************
+ ******************************************************************* -->
+
+
+    <section class="img-wrapper">
+        <div
+            class="subs-item-wrapper d-flex flex-column flex-md-row align-items-center justify-content-center container py-5">
+            <div class="flex-column text-center text-md-start me-md-4">
+                <h2 class="subs-title mb-2">
+                    Subscribe To Our Newsletter
+                </h2>
+                <div class="lin mx-auto mx-md-0"></div>
+            </div>
+            <div class="d-flex flex-column text-center text-md-start mt-3 mt-md-0">
+                <p class="w-100 w-md-75 mx-auto mx-md-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+                    optio voluptatem pariatur quisquam
+                    ipsam earum, ea libero, sapiente, fuga velit dolores ut amet. Labore, laborum neque.</p>
+                <div class="input-group my-3">
+                    <input type="email" class="form-control btn-custom" name="email"
+                        placeholder="Enter your email address here" aria-label="Email address">
+                    <button class="btn btn-custom" type="submit">
+                        Send <i class="fa fa-send ms-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- **************************************************
+ ******************************************************************************
+*-->
+
+    <footer class=" text-dark  py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center mb-4">
+                    <img src="./assets/image/logo.png" alt="Logo" class="img-fluid mb-3" style="max-width: 180px;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam laborum itaque debitis sed nemo
+                        error, ipsam aperiam? Quidem odio voluptas, nostrum iure doloremque tempore laborum veritatis
+                        fugit provident reprehenderit.</p>
+                </div>
+
+                <div class="col-md-2 mb-4">
+                    <h3>About Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">vision</a></li>
+                        <li><a href="#" class="text-dark">articals</a></li>
+                        <li><a href="#" class="text-dark">career</a></li>
+                        <li><a href="#" class="text-dark">services item</a></li>
+                        <li><a href="#" class="text-dark">donate</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-2 mb-4">
+                    <h3>Discover</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">home</a></li>
+                        <li><a href="#" class="text-dark">books</a></li>
+                        <li><a href="#" class="text-dark">authors </a></li>
+                        <li><a href="#" class="text-dark">subjects</a></li>
+                        <li><a href="#" class="text-dark">advanced search</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-2 mb-4">
+                    <h3>My Account</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">sign in</a></li>
+                        <li><a href="#" class="text-dark">view cart</a></li>
+                        <li><a href="#" class="text-dark">my wishlist</a></li>
+                        <li><a href="#" class="text-dark">track my order</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-2 mb-4">
+                    <h3>Help</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">help center</a></li>
+                        <li><a href="#" class="text-dark">report problem</a></li>
+                        <li><a href="#" class="text-dark">suggesting edits</a></li>
+                        <li><a href="#" class="text-dark">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-3">
+            <p>&copy; 2024 eng.Hanin . All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+.custom-color {
+  color: #ac683a !important;
+}
+
+.custom-bg {
+  background-color: #ac683a;
+}
+
+.custom-border {
+  border-color: #ac683a !important;
+}
+
+.custom-text-color {
+  color: rgb(56, 56, 56);
+}
+
+.circlr-hno {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(156, 155, 155);
+}
+
+.hero-title {
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.hero-text {
+  width: 50%;
+  transform: translateX(50%);
+}
+
+.img-wrapper {
+  background-color: #edebe4;
+}
+
+/* ******************************************************************************* */
+
+#featured-books,
+#popular-books,
+#best-selling-book {
+  margin-top: 30px;
+  padding: 60px 0; /* يتم تضمين الحشو هنا لتجنب التكرار */
+}
+
+.card-title {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-text {
+  color: #555;
+}
+
+.line-title {
+  color: #817e7e;
+}
+
+/* ********************************************************************************************* */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* ***********************Featured Books *************************/
+#featured-books .book-item,
+#popular-books .book-item {
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+#featured-books .book-item {
+  border: 20px solid #f8f9fa;
+}
+
+#featured-books .book-item:hover,
+#popular-books .book-item:hover {
+  transform: scale(1.05);
+}
+
+#featured-books .card-img-top,
+#popular-books .card-img-top {
+  height: 200px; /* يمكن تعديلها لاحقًا حسب الحاجة */
+  object-fit: cover;
+}
+
+#featured-books .book-title,
+#popular-books .book-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#featured-books .book-author,
+#popular-books .book-author {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+/* *************************Best Selling Book ********************************************************* */
+
+#best-selling-book {
+  padding: 60px 0;
+}
+
+.best-selling-book-card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#best-selling-book img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#best-selling-book h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  width: 50%;
+}
+
+#best-selling-book .book-author {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#best-selling-book .book-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#best-selling-book .card-text {
+  margin-top: 15px;
+  color: #777;
+  width: 50%;
+  line-height: 1.8;
+}
+
+#best-selling-book .btn-primary {
+  margin-top: 20px;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+}
+
+.line-title {
+  font-size: 1.2rem;
+  color: #888;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.popular-lnk {
+  list-style-type: none;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.popular-lnk li {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.popular-lnk li:hover,
+.popular-lnk li.active {
+  color: #000;
+  border-bottom: 2px solid #000;
+}
+
+#popular-books-list .book-item {
+  transition: transform 0.3s;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.subs-item-wrapper {
+  max-width: 800px;
+  gap: 20px;
+}
+
+.subs-title {
+  font-size: 2.8rem;
+  color: #333;
+}
+
+.lin {
+  width: 60px;
+  height: 3px;
+  background-color: #ac683a;
+  margin-bottom: 30px;
+}
+
+.subs-item-wrapper .form-control {
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-custom {
+  border-bottom: 2px solid #9c9c9c !important;
+  color: #333;
+  border-radius: 0;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .subs-title {
+    font-size: 2.2rem;
+  }
+
+  .subs-item-wrapper {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #f8f9fa;
+  line-height: 1.8;
+  color: #333;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
